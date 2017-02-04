@@ -3,16 +3,28 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AppRoutingModule } from './app.routing';
+
+import { MaterializeModule } from 'angular2-materialize';
+
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AdditionalComponent } from './additional/additional.component';
+import { RecordsComponent } from './records/records.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AdditionalComponent,
+    RecordsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterializeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
